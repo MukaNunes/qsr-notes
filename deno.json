@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env --allow-read --watch main.tsx",
+    "build": "deno compile --allow-env --output bin/qsr-notes main.tsx"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment"
+  }
+}
